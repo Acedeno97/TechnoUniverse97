@@ -1,0 +1,524 @@
+/* 380*630 MOBILE */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;700&family=Fraunces:opsz,wght@9..144,700&family=Source+Code+Pro:wght@300;500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --nav-height: 60px;
+    --min-width: 370px;
+    --color-fondo: #00aa1c;
+    --color-back-bar: #0088aa;
+    --color-bg-nav: #005e75;
+    --color-bg-content-nav: #404757;
+    --Font-Principal: 'Roboto', sans-serif;
+    --gradiant-Bar: url('../img/waves/wave-bar.svg');
+    --gradiant-Bar2: url('../img/waves/wave-bar2.svg');
+    --gradiant-Bar-Select: linear-gradient(to top, #09203f 0%, #537895 100%);
+    --gradiant-Bar-collapse: linear-gradient(#002a49 0%, #0088aa 100%);
+    --Back-footer: url('../img/waves/wave-footer.svg');
+    --Back-footer2: url('../img/waves/wave-footer2.svg');
+    /* Bar Izq */
+    --Back-facebook: #1877F2;
+    --Back-twitter: #55acee;
+    --Back-instragram: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);;
+    --Back-youtube: #FF0000;
+    --Back-tiktok: #000;
+    --Back-correo: #fff;
+    /* BODY */
+    --gradiant-body: linear-gradient(to right, #002a49 0%, #0088aa 100%);
+    --Font-Chakra: 'Chakra Petch', sans-serif;
+    --Font-Fraunces: 'Fraunces', serif;
+    --Font-Source-Code-Pro: 'Source Code Pro', monospace;
+    --Color-Font-Titulos: #09203f;
+    --Color-Font-Sub-Titulos: #e7f1ff;
+    --Wave1: url('../img/waves/wave-body1.svg');
+    --text-services: #00000091;
+}
+
+.root_main{
+    overflow-x: hidden;
+    background-image: var(--gradiant-body);
+    /* background-color: var(--color-fondo); */
+    /* height: 720px; */
+    /* el "min-height: 100vh" esta colocado como opcional para crear un espacio contenido mientras que aun no hay nada existente */
+    /* min-height: 100vh; */
+}
+
+.nav-bar{
+    background-image: var(--gradiant-Bar);
+    background-size: cover;
+    background-position: center;
+    background-color: var(--color-back-bar);
+    height: var(--nav-height);
+    font-size: 10px;
+    font-family: var(--Font-Principal);
+    border-bottom: double white;
+    width: 100%;
+    position: fixed;
+}
+
+/* Contenido de la barra de navegacion */
+.nav-bar__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    height: 100%;
+    max-width: var(--content-max-width);
+    margin: auto;
+    position: relative;
+}
+
+.nav-bar__logo-container{
+    width: 50px;
+    object-fit: cover;
+    /* border: solid;
+    border-color: black; */
+}
+
+.nav-bar__link-logo, .nav-bar__img-logo{
+    display: block;
+}
+
+.nav-bar__img-logo{
+    padding: 0;
+    max-width: 100%;
+    max-height: var(--nav-height);
+}
+
+/* icono del menu */
+.nav-bar__icon{
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 1px 5px 1px;
+    cursor: pointer;
+}
+
+.nav-bar__icon::before{
+     display: block;
+     color: var(--color-bg-nav);
+     font-size: 1.5rem;
+}
+
+/* Parte oculta en la version movil */
+.nav-bar__collapse{
+    position: absolute;
+    border-top: 2px dashed #fff;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    border-bottom-left-radius: 25px;
+    width: 35%;
+    padding: 15px 0;
+    background-image: var(--gradiant-Bar-collapse);
+    transition: all .8s;
+    top: 100%;
+    right: -100%;
+}
+
+.nav-bar__collapse.from-right{
+    top: 100%;
+    right: -100%;
+}
+
+.nav-bar__collapse.show{
+    top: 100%;
+    right: 0%;
+}
+
+.menu{
+    list-style: none;
+}
+
+/* Afecta tamaño de letra de la barra */
+.menu__link, .nav-bar__link-login, .nav-bar__link-register{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: .6rem;
+}
+
+.menu__link:hover, .nav-bar__link-login:hover .nav-bar__link-register:hover{
+    background-color: var(--color-bg-nav);
+}
+
+.nav-bar__link-login, .nav-bar__link-register{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.nav-bar__link-login::before, .nav-bar__link-register::before{
+    display: block;
+    margin-left: 5px;
+    color: aqua;
+}
+
+.nav-bar__link-login:hover, .nav-bar__link-register:hover{
+    background-color: var(--color-bg-nav);
+}
+
+.icon-login::after{
+    content: url(../assets/login.svg);
+}
+
+.icon-register::after{
+    content: url(../assets/reg.svg);
+}
+
+/* BODY */
+/* BARRA IZQ */
+.section_bar-left{
+    width: 35px;
+    top: 35%;
+    position: fixed;
+}
+
+.icons_bar_left{
+    list-style: none;
+    font-family: var(--Font-Chakra);
+}
+
+.icons_bar__item{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.icons_bar_size{
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+}
+
+/* COLORES DE LOS LOGOS DE REDES SOCIALES */
+.icon_color-type1{
+    background-color: var(--Back-facebook);
+    padding: 5px 5px 1px 2px;
+    border: solid;
+    border-color: transparent;
+    border-radius: 0 20px 0 0;
+    transition: 0.5s;
+}
+
+.icon_color-type2{
+    background-color: var(--Back-twitter);
+    padding: 5px 5px 1px 2px;
+    border: solid;
+    border-color: transparent;
+    border-radius: 0;
+    transition: 0.5s;
+}
+
+.icon_color-type3{
+    background-image: var(--Back-instragram);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5px 5px 1px 4px;
+    /* border: solid; */
+    border-color: transparent;
+    border-radius: 0;
+    transition: 0.5s;
+}
+
+.icon_color-type4{
+    background-color: var(--Back-youtube);
+    padding: 5px 5px 1px 2px;
+    border: solid;
+    border-color: transparent;
+    border-radius: 0;
+    transition: 0.5s;
+}
+
+.icon_color-type5{
+    background-color: var(--Back-tiktok);
+    padding: 5px 5px 1px 2px;
+    border: solid;
+    border-color: transparent;
+    border-radius: 0;
+    transition: 0.5s;
+}
+
+.icon_color-type6{
+    background-color: var(--Back-correo);
+    padding: 5px 5px 1px 2px;
+    border: solid;
+    border-color: transparent;
+    border-radius: 0 0 20px 0;
+    transition: 0.5s;
+}
+/* COLORES DE LOS LOGOS DE REDES SOCIALES */
+
+.icons_bar__link{
+    text-decoration: none;
+}
+/* BARRA IZQ */
+
+/* V -- CUERPO -- V */
+.body_container{
+    margin-top: 95px;
+    align-content: center;
+}
+
+.body_container1{
+    height: 75vh;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--Font-Chakra);
+    color: var(--Color-Font-Titulos);
+    text-shadow: 1px 1px 0 #fff;
+    padding-bottom: 10px;
+}
+
+/* V -- CUERPO -- V */
+
+.container_login{
+    margin: 15px 25%;
+    height: auto;
+
+    border: double 10px;
+    border-radius: 15px;
+    border-color: #000;
+    background-color: white;
+    padding: 4px;
+    box-shadow: 3px 3px 0 #ffffff;
+}
+
+.box_login{
+    text-align-last: center;
+    margin: 35px;
+}
+
+.text-titles{
+    font-family: var(--Font-Chakra);
+    color: var(--Color-Font-Titulos);
+    text-shadow: 1px 1px 0 #fff;
+}
+
+.text_login_box{
+    padding: 20px 0 5px 0;
+}
+
+.textbox-login{
+    height: 30px;
+    width: 70%;
+    font-size: 17px;
+}
+
+.btn-box-login{
+    display: block;
+    margin: 15px auto;
+    height: 30px;
+    width: 70%;
+}
+
+/* ---------------- */
+
+/* DEL FOOTER */
+.footer-container{
+    width: 100%;
+    color: #fff;
+    border-top: 3px double #fff;
+    background-color: var(--color-back-bar);
+    background-image: var(--Back-footer);
+    background-size: cover;
+    font-family: var(--Font-Principal);
+}
+
+.main-footer{
+    display: flex;
+    height: 100px;
+    font-size: small;
+    font-style: italic;
+    text-align: center;
+    border-bottom: 3px solid #000;
+}
+
+.fot-datos{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding-top: 2px;
+}
+/* DEL FOOTER */
+
+@media (min-width: 840px){
+    .nav-bar{
+        background-image: var(--gradiant-Bar2);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    /* Ocultar el boton menu */
+    .nav-bar__icon{
+        display: none;
+    }
+
+    /* Contenedor del logo */
+    /* .nav-bar__logo-container{
+        width: auto;
+    } */
+
+    /* Opciones de movil a Escritorio */
+    .nav-bar__collapse{
+        width: 100%;
+        position: static;
+        background-color: transparent;
+        background-image: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        margin-left: 10px;
+        border-top: none;
+        border-left: none;
+        border-bottom: none;
+        border-bottom-left-radius: none;
+    }
+
+    .nav-bar__collapse.from-right{
+        clip-path: none;
+    }
+
+    /* Menu */
+    .menu{
+        display: flex;
+    }
+
+    .menu__link, .nav-bar__link-login, .nav-bar__link-register{
+        padding: 0 15px;
+        line-height: 25px;
+        color: #fff;
+        text-decoration: none;
+
+        --clippy: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
+    }
+
+    .menu__link::after, .nav-bar__link-login::after, .nav-bar__link-register::after{
+        content: "";
+        display: block;
+        background-color: #fff;
+        width: 100%;
+        margin-top: 0;
+        height: 3px;
+        clip-path: var(--clippy);
+        transition: .5s;
+    }
+
+    .menu__link:hover, .nav-bar__link-login:hover, .nav-bar__link-register:hover{
+        background-color: transparent;
+        --clippy: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    /* Botones de login y registro */
+
+    .icon-login::after{
+        content: none;
+    }
+    
+    .icon-register::after{
+        content: none;
+    }
+
+    .nav-bar__link-login, .nav-bar__link-register{
+        display: block;
+        line-height: 25px;
+        --clippy: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
+    }
+    .nav-bar__link-login::after, .nav-bar__link-register::after{
+        content: "";
+        display: block;
+        background-color: #fff;
+        width: 100%;
+        margin-top: 0;
+        height: 3px;
+        clip-path: var(--clippy);
+        transition: .5s;
+    }
+
+    .nav-bar__link-login:hover, .nav-bar__link-register:hover{
+        --clippy: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+        
+    /* Botones login registro */
+    .nav-bar__options-container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+/* V-- BODY --V */
+    
+    /* BARRA IZQ */    
+    .icons_bar__item{
+        display: flex;
+        width: 40px;
+        height: 50px;
+        align-items: center;
+    }
+    /* BARRA IZQ */
+    
+    /* V -- CUERPO -- V */    
+    .division{
+        border-radius: 100%;
+        margin: 5px 50px;
+    }
+    /* V-- BODY --V */
+    
+    /* --------------- */
+
+    /* FOOTER */
+    .footer-container{
+        background-image: var(--Back-footer2);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    /* FOOTER */
+
+    @media (min-width: 930px) {
+        /* BARRA IZQ */
+        .icons_bar__link{
+            position: relative;
+            left: 20%;
+        }
+        
+        /* AL PASAR EL CURSOR POR LAS REDES */
+        .icon_color-type1:hover{
+            width: 60px;
+            transition: 0.5s;
+        }
+
+        .icon_color-type2:hover{
+            width: 60px;
+            transition: 0.5s;
+        }
+        .icon_color-type3:hover{
+            width: 60px;
+            transition: 0.5s;
+        }
+        .icon_color-type4:hover{
+            width: 60px;
+            transition: 0.5s;
+        }
+        .icon_color-type5:hover{
+            width: 60px;
+            transition: 0.5s;
+        }
+        .icon_color-type6:hover{
+            width: 60px;
+            transition: 0.5s;
+        }
+
+        /* V-- Body --V */
+    }
+}
