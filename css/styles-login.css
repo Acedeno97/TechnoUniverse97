@@ -354,7 +354,13 @@
 }
 /* DEL FOOTER */
 
-@media (min-width: 840px){
+/*------------# TABLET #--------------------------------------*/
+@media (min-width: 830px){
+
+    .body_container{
+        background-color: #00aa1c;
+    }
+
     .nav-bar{
         background-image: var(--gradiant-Bar2);
         background-size: cover;
@@ -484,41 +490,19 @@
         background-repeat: no-repeat;
     }
     /* FOOTER */
+}
 
-    @media (min-width: 930px) {
-        /* BARRA IZQ */
-        .icons_bar__link{
-            position: relative;
-            left: 20%;
-        }
-        
-        /* AL PASAR EL CURSOR POR LAS REDES */
-        .icon_color-type1:hover{
-            width: 60px;
-            transition: 0.5s;
-        }
+/*------------# MOVIL #--------------------------------------*/
+@media (max-width: 555px) {
 
-        .icon_color-type2:hover{
-            width: 60px;
-            transition: 0.5s;
-        }
-        .icon_color-type3:hover{
-            width: 60px;
-            transition: 0.5s;
-        }
-        .icon_color-type4:hover{
-            width: 60px;
-            transition: 0.5s;
-        }
-        .icon_color-type5:hover{
-            width: 60px;
-            transition: 0.5s;
-        }
-        .icon_color-type6:hover{
-            width: 60px;
-            transition: 0.5s;
-        }
-
-        /* V-- Body --V */
+    .body_container{
+        background-color: #d6249f;
     }
+
+    .container_login{
+        margin: 15px 15%;
+    }
+
+    /* V-- Body --V */
+
 }
