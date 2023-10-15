@@ -357,10 +357,6 @@
 /*------------# TABLET #--------------------------------------*/
 @media (min-width: 830px){
 
-    .body_container{
-        background-color: #00aa1c;
-    }
-
     .nav-bar{
         background-image: var(--gradiant-Bar2);
         background-size: cover;
@@ -494,13 +490,12 @@
 
 /*------------# MOVIL #--------------------------------------*/
 @media (max-width: 555px) {
-
-    .body_container{
-        background-color: #d6249f;
-    }
-
     .container_login{
         margin: 15px 15%;
+    }
+
+    .text_login_box{
+        font-size: 20px;
     }
 
     /* V-- Body --V */
