@@ -324,7 +324,7 @@
 }
 /* DEL FOOTER */
 
-@media (min-width: 830px){
+@media (min-width: 555px){
     .nav-bar{
         background-image: var(--gradiant-Bar2);
         background-size: cover;
@@ -478,7 +478,7 @@
     }
     /* FOOTER */
 
-    @media (min-width: 555px) {
+    @media (min-width: 830px) {
         
         /* V-- Body --V */
         .img-title{
