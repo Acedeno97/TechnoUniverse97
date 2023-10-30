@@ -203,6 +203,7 @@
     color: var(--Color-Font-Titulos);
     text-shadow: 1px 1px 0 #fff;
     padding-bottom: 10px;
+    margin: 0 15%;
 }
 
 .img-title{
@@ -227,7 +228,6 @@
 .res-container{
     margin: 5px;
     padding: 10px;
-    
 }
 
 .res-img{
@@ -437,6 +437,10 @@
     .division{
         border-radius: 100%;
         margin: 5px 50px;
+    }
+
+    .leng-part{
+        display: inline;
     }
 
     /* V-- RESERVA --V */
