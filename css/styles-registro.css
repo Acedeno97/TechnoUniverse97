@@ -174,7 +174,6 @@
 
 /* BODY */
 
-
 /* V -- CUERPO -- V */
 .body_container{
     margin-top: 95px;
@@ -182,7 +181,8 @@
 }
 
 .body_container1{
-    height: 75vh;
+    height: 150%;
+    margin-bottom: 50px;
 }
 
 .title{
@@ -193,6 +193,46 @@
     color: var(--Color-Font-Titulos);
     text-shadow: 1px 1px 0 #fff;
     padding-bottom: 10px;
+}
+
+.container_registro{
+    margin: 15px 25%;
+    height: auto;
+
+    border: double 10px;
+    border-radius: 15px;
+    border-color: #000;
+    background-color: white;
+    padding: 4px;
+    box-shadow: 3px 3px 0 #ffffff;
+}
+
+.box_registro{
+    text-align-last: center;
+    margin: 35px;
+}
+
+.text-titles{
+    font-family: var(--Font-Chakra);
+    color: var(--Color-Font-Titulos);
+    text-shadow: 1px 1px 0 #fff;
+}
+
+.text_registro_box{
+    padding: 20px 0 5px 0;
+}
+
+.textbox-registro{
+    height: 30px;
+    width: 70%;
+    font-size: 17px;
+}
+
+.btn-box-registro{
+    display: block;
+    margin: 15px auto;
+    height: 30px;
+    width: 70%;
 }
 /* V -- CUERPO -- V */
 
