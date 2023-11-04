@@ -196,6 +196,52 @@
 }
 /* V -- CUERPO -- V */
 
+/*---------------------------------------------------------------*/
+.box-contact{
+    border: #00aa1c solid;
+    margin: 0 15%;
+    padding: 20px;
+}
+
+.table-contact{
+    display: grid;
+        grid-template-columns: 50%;
+        grid-auto-rows: auto;
+        grid-template-areas: 
+        "contact-ws contact-ws"
+        "contact-fb contact-tw"
+        "contact-inst contact-yt"
+        "contact-ttk contact-mail";
+}
+
+.marco-contat{
+    border: groove;
+}
+
+
+.contact-ws{
+
+}
+.contact-fb{
+
+}
+.contact-tw{
+    
+}
+.contact-inst{
+
+}
+.contact-yt{
+
+}
+.contact-ttk{
+
+} 
+.contact-mail{
+    
+}
+/*---------------------------------------------------------------*/
+
 /* DEL FOOTER */
 .footer-container{
     width: 100%;
