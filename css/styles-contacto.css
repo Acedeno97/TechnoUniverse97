@@ -220,26 +220,27 @@
 
 
 .contact-ws{
-
+    grid-area: contact-ws;
 }
 .contact-fb{
-
+    grid-area: contact-fb;
 }
 .contact-tw{
-    
+    grid-area: contact-tw;
 }
 .contact-inst{
-
+    grid-area: contact-inst;
 }
 .contact-yt{
-
+    grid-area: contact-yt;
 }
 .contact-ttk{
-
+    grid-area: contact-ttk;
 } 
 .contact-mail{
-    
+    grid-area: contact-mail;
 }
+
 /*---------------------------------------------------------------*/
 
 /* DEL FOOTER */
