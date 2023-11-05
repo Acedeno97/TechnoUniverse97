@@ -182,7 +182,7 @@
 }
 
 .body_container1{
-    height: 75vh;
+    height: 110%;
 }
 
 .title{
@@ -198,7 +198,6 @@
 
 /*---------------------------------------------------------------*/
 .box-contact{
-    border: #00aa1c solid;
     margin: 0 15%;
     padding: 20px;
 }
@@ -212,6 +211,8 @@
         "contact-fb contact-tw"
         "contact-inst contact-yt"
         "contact-ttk contact-mail";
+
+        text-align: center;
 }
 
 .marco-contat{
@@ -222,6 +223,7 @@
 .contact-ws{
     grid-area: contact-ws;
 }
+
 .contact-fb{
     grid-area: contact-fb;
 }
@@ -241,6 +243,12 @@
     grid-area: contact-mail;
 }
 
+.form-img-contact{
+    width: 35%;
+    border-radius: 35px;
+    border: #000 groove 5px;
+    box-shadow: 2.5px 2.5px 0 #fff;
+}
 /*---------------------------------------------------------------*/
 
 /* DEL FOOTER */
