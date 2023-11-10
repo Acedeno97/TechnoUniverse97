@@ -207,17 +207,16 @@
         grid-template-columns: 50%;
         grid-auto-rows: auto;
         grid-template-areas: 
-        "contact-ws contact-ws"
-        "contact-fb contact-tw"
-        "contact-inst contact-yt"
-        "contact-ttk contact-mail";
+        "contact-ws contact-ws contact-ws"
+        "contact-fb contact-tw contact-inst"
+        "contact-yt contact-ttk contact-mail";
 
         text-align: center;
 }
 
-.marco-contat{
+/* .marco-contat{
     border: groove;
-}
+} */
 
 
 .contact-ws{
