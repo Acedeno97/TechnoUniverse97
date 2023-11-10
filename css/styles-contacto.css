@@ -204,27 +204,23 @@
 
 .table-contact{
     display: grid;
-        grid-template-columns: 50%;
+        grid-template-columns: auto;
         grid-auto-rows: auto;
         grid-template-areas: 
-        "contact-ws contact-ws contact-ws"
-        "contact-fb contact-tw contact-inst"
-        "contact-yt contact-ttk contact-mail";
+        "contact-ws contact-ws contact-mail contact-mail"
+        "contact-tw contact-inst contact-yt contact-ttk";
 
         text-align: center;
 }
 
 /* .marco-contat{
     border: groove;
+    width: 100%;
 } */
 
 
 .contact-ws{
     grid-area: contact-ws;
-}
-
-.contact-fb{
-    grid-area: contact-fb;
 }
 .contact-tw{
     grid-area: contact-tw;
@@ -243,7 +239,8 @@
 }
 
 .form-img-contact{
-    width: 35%;
+    width: 225px;
+    padding: 25px;
     border-radius: 35px;
     border: #000 groove 5px;
     box-shadow: 2.5px 2.5px 0 #fff;
