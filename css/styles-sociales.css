@@ -1,3 +1,13 @@
+:root{
+/* Bar Izq */
+--Back-whatsapp: #40c351;
+--Back-twitter: #55acee;
+--Back-instragram: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);;
+--Back-youtube: #FF0000;
+--Back-tiktok: #000;
+--Back-correo: #fff;
+}
+
 /* BARRA IZQ */
 .section_bar-left{
     width: 35px;
@@ -26,7 +36,7 @@
 
 /* COLORES DE LOS LOGOS DE REDES SOCIALES */
 .icon_color-type1{
-    background-color: var(--Back-facebook);
+    background-color: var(--Back-whatsapp);
     padding: 5px 5px 1px 2px;
     border: solid;
     border-color: transparent;
@@ -39,6 +49,7 @@
     padding: 5px 5px 1px 2px;
     border: solid;
     border-color: transparent;
+    border-radius: 0 20px 0 0;
     border-radius: 0;
     transition: 0.5s;
 }
