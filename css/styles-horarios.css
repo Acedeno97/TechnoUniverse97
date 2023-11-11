@@ -22,13 +22,6 @@
     --gradiant-Bar-collapse: linear-gradient(#002a49 0%, #0088aa 100%);
     --Back-footer: url('../img/waves/wave-footer.svg');
     --Back-footer2: url('../img/waves/wave-footer2.svg');
-    /* Bar Izq */
-    --Back-facebook: #1877F2;
-    --Back-twitter: #55acee;
-    --Back-instragram: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);;
-    --Back-youtube: #FF0000;
-    --Back-tiktok: #000;
-    --Back-correo: #fff;
     /* BODY */
     --gradiant-body: linear-gradient(to right, #002a49 0%, #0088aa 100%);
     --Font-Chakra: 'Chakra Petch', sans-serif;
@@ -173,8 +166,6 @@
 }
 
 /* BODY */
-
-
 /* V -- CUERPO -- V */
 .body_container{
     margin-top: 95px;
@@ -182,7 +173,8 @@
 }
 
 .body_container1{
-    height: 75vh;
+    height: 100%;
+    padding: 15px 0;
 }
 
 .title{
@@ -194,6 +186,76 @@
     text-shadow: 1px 1px 0 #fff;
     padding-bottom: 10px;
 }
+
+.sub-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--Font-Chakra);
+    color: var(--Color-Font-Sub-Titulos);
+    text-shadow: 1px 1px 0 #000000;
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+
+.box-horarios{
+    margin: 0 6%;
+    padding: 5%;
+}
+
+.horario-borde{
+    border: #000 double 12px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 0 #fff;
+    background: #ffffff;
+    height: 100%;
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "hor"
+    "lun"
+    "mar"
+    "mier"
+    "jue"
+    "vier"
+    "sab"
+    "dom";
+}
+.box-hor{
+    grid-area: hor;
+}
+.box-lun{
+    grid-area: lun;
+}
+.box-mar{
+    grid-area: mar;
+}
+.box-mier{
+    grid-area: mier;
+}
+.box-jue{
+    grid-area: jue;
+}
+.box-vier{
+    grid-area: vier;
+}
+.box-sab{
+    grid-area: sab;
+}
+.box-dom{
+    grid-area: dom;
+}
+
+.box-form{
+    border: #000 groove;
+    background-color: var(--color-back-bar);
+    padding: 5px;
+    margin: 15px 35px;
+}
+
+
 /* V -- CUERPO -- V */
 
 /* DEL FOOTER */
@@ -224,7 +286,7 @@
 }
 /* DEL FOOTER */
 
-@media (min-width: 840px){
+@media (min-width: 625px){
     .nav-bar{
         background-image: var(--gradiant-Bar2);
         background-size: cover;
@@ -328,20 +390,23 @@
     }
 
 /* V-- BODY --V */
-    
-    /* BARRA IZQ */    
-    .icons_bar__item{
-        display: flex;
-        width: 40px;
-        height: 50px;
-        align-items: center;
-    }
-    /* BARRA IZQ */
-    
     /* V -- CUERPO -- V */    
     .division{
         border-radius: 100%;
         margin: 5px 50px;
+    }
+    .box-horarios{
+        margin: 5px 6%;
+    }
+
+    .horario-borde{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "hor hor"
+        "lun mar"
+        "mier jue"
+        "vier sab"
+        "dom dom";
     }
     /* V-- BODY --V */
 
@@ -353,41 +418,20 @@
     }
     /* FOOTER */
 
-    @media (min-width: 930px) {
-        
-        /* BARRA IZQ */
-        .icons_bar__link{
-            position: relative;
-            left: 20%;
-        }
-        
-        /* AL PASAR EL CURSOR POR LAS REDES */
-        .icon_color-type1:hover{
-            width: 60px;
-            transition: 0.5s;
+    @media (min-width: 915px) {
+        .box-horarios{
+            margin: 25px 6%;
+            padding: 5%;
         }
 
-        .icon_color-type2:hover{
-            width: 60px;
-            transition: 0.5s;
+        .horario-borde{
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas:
+            "hor hor hor"
+            "lun mar mier"
+            "jue vier sab"
+            "dom dom dom";
         }
-        .icon_color-type3:hover{
-            width: 60px;
-            transition: 0.5s;
-        }
-        .icon_color-type4:hover{
-            width: 60px;
-            transition: 0.5s;
-        }
-        .icon_color-type5:hover{
-            width: 60px;
-            transition: 0.5s;
-        }
-        .icon_color-type6:hover{
-            width: 60px;
-            transition: 0.5s;
-        }
-
         /* V-- Body --V */
     }
 }
