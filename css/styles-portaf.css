@@ -182,7 +182,7 @@
 }
 
 .body_container1{
-    height: 75vh;
+    height: 100%;
 }
 
 .title{
@@ -193,6 +193,39 @@
     color: var(--Color-Font-Titulos);
     text-shadow: 1px 1px 0 #fff;
     padding-bottom: 10px;
+}
+
+.container-portaf{
+    margin: 10px 55px;
+    padding: 15px;
+    height: 300px;
+    width: auto;
+}
+
+.folder-portaf{
+    border: #FF0000 solid;
+    margin: 5px 20%;
+    padding: 25px;
+    
+    display: flex;
+}
+
+.portaf-box-1{
+    border: #0088aa solid;
+    height: 150px;
+    width: 150px;
+    margin-right: 5%;
+}
+.portaf-box-2{
+    border: #00aa0e solid;
+    height: 150px;
+    width: 150px;
+    margin-right: 5%;
+}
+
+.portaf-text{
+    text-align: center;
+    text-decoration: none;
 }
 /* V -- CUERPO -- V */
 
