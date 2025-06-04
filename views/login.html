@@ -124,13 +124,18 @@
                         <section class="text-titles box_login">
                             <h2 class="text_login_box">Inicio de Sesion</h2>
 
-                            <h3 class="text_login_box">Usuario</h3>
-                            <input type="text" class="textbox-login">
-                            <h3 class="text_login_box">Clave</h3>
-                            <input type="text" class="textbox-login">
+                            <div class="">
+                                <label for="username" class="text_login_box">Usuario</label>
+                            </div>
+                            <input type="text" id="username" class="textbox-login" placeholder="Usuario" required maxlength="25">
+                            
+                            <div>
+                                <label for="password">Clave</label>
+                            </div>
+                            <input type="password" id="password" class="textbox-login" placeholder="Contraseña" required maxlength="15">
 
-                            <input type="button" value="Aceptar" class="btn-box-login" id="btn-login">
-
+                            <button type="submit" id="submit" class="btn-box-login">Iniciar Sesion</button>
+                            
                             <a href="#">Olvido Contraseña</a>
                         </section>
                     </div>
@@ -156,5 +161,6 @@
 
     <!-- Enlace del JavaScript con html -->
     <script type="text/javascript" src="../js/app.js"></script>
+    <script src="../js/login.js"></script>
 </body>
 </html>

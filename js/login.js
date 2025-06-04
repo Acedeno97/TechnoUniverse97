@@ -1,17 +1,30 @@
-// Seleccionar el formulario y agregar un evento de escucha
-document.getElementById('loginForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Evitar el envío del formulario por defecto
+const $submit = document.getElementById("submit");
+      $password = document.getElementById("password");
+      $username = document.getElementById("username");
+      $visible= document.getElementById("visible");
 
-    // Obtener los valores de los campos
-    const username = document.getElementById('username').value;
-    const password = document.getElementById('password').value;
-
-    // Validar los valores (puedes agregar lógica adicional aquí)
-    if (username === 'admin' && password === '1234') {
-        // Redirigir a view_user.html si las credenciales son correctas
-        window.location.href = 'view_user.html';
-    } else {
-        // Mostrar un mensaje de error si las credenciales son incorrectas
-        alert('Usuario o contraseña incorrectos');
+document.addEventListener("change", (e) => {
+    if (e.target === $visible) {
+        if($visible.checked === false) $password.type = "password";
+        else $password.type = "text";
     }
-});
+})
+
+document.addEventListener("click", (e) => {
+    if(e.target ===$submit) {
+        if($password.value !== "" && $username.value !== "") {
+            if($username.value === "admin" && $password.value === "admin") {
+                e.preventDefault();
+                window.location.href = "/TechnoUniverse97/views/login/view_user.html";
+            }
+            else {
+                e.preventDefault();
+                alert("Usuario o contraseña incorrectos.");
+            }
+        }
+        else {
+            e.preventDefault();
+            alert("Por favor, rellene todos los campos.");
+        }
+    }
+})
